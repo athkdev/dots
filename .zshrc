@@ -111,5 +111,12 @@ alias nvim-edit="nvim $HOME/.config/nvim"
 alias hypr-edit="nvim $HOME/.config/hypr/hyprland.conf"
 alias g="git"
 
+lc_new() {
+    cp "$HOME/Code/blog/content/leetcode resources/523 Continuous Subarray Sum.md" "$HOME/Code/blog/content/leetcode resources/$1.md"
 
+    echo "$HOME/Code/blog/content/leetcode resources/$1.md created."
+}
 
+lc_open() {
+    nvim "$HOME/Code/blog/content/leetcode resources/$1.md"
+}
