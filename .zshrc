@@ -75,7 +75,9 @@ plugins=(
     git
     zsh-syntax-highlighting
     zsh-autosuggestions
+#   zsh-256color
 )
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -109,12 +111,14 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-alias wez-edit="nvim $HOME/.wezterm.lua"
-alias zsh-edit="nvim $HOME/.zshrc"
-alias nvim-edit="nvim $HOME/.config/nvim"
-alias hypr-edit="nvim $HOME/.config/hypr/hyprland.conf"
 alias g="git"
+alias c="cursor"
+alias edit_zsh="vim ~/.zshrc"
+alias edit_ghostty="vi $HOME/Library/Application\ Support/com.mitchellh.ghostty/config"
+alias source_zsh="source ~/.zshrc"
 
+
+# my leetcode stuff
 lc_new() {
     cp "$HOME/Code/blog/content/leetcode resources/523 Continuous Subarray Sum.md" "$HOME/Code/blog/content/leetcode resources/$1.md"
 
